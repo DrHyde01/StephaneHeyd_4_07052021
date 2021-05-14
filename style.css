@@ -275,7 +275,7 @@ a:hover {
 
 #bloc-1-hero h1 {
   font-size: 32px;
-  background-color: #e35a1ade;
+  background-color: #f85307e0;
   padding: 20px;
   border-radius: 50px;
 }
@@ -434,7 +434,7 @@ nav .caret {
 }
 
 .contact {
-  background-color: #e35a1ade;
+  background-color: #f85307d5;
   color: #ffff;
   padding: 10px;
   border-radius: 50px;
@@ -748,11 +748,7 @@ h4 {
 
 .portfolio-thumb {
   margin-bottom: 24px;
-}
-
-.portfolio-row {
-  margin-bottom: 44px;
-  margin-top: 50px;
+  width: 100%;
 }
 
 .avatar {
@@ -760,9 +756,38 @@ h4 {
 }
 
 .black-background {
-  background-color: #e35a1ade;
+  background-color: #f85307e0;
   padding: 40px 40px 40px 40px;
   border-radius: 50px;
+}
+
+@media (max-width: 1024px) { /* To make more responsive */ 
+  .black-background {
+    border-radius: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+  }
+
+  .contact {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .social {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  a[data-lightbox] {
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio-thumb {
+    width: 60%;
+  }
 }
 
 .bold-link {
@@ -787,7 +812,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-  background: #e35a1ade;
+  background: #f85307d5;
   color: #ffffff !important;
 }
 
@@ -1019,7 +1044,7 @@ h4 {
     margin-top: 30px;
   }
   form {
-    padding: 5px;
+    padding: 5%;
   }
   .close-lightbox {
     display: inline-block;
@@ -1048,5 +1073,3 @@ h4 {
     text-align: center;
   }
 }
-
-
